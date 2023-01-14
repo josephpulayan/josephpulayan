@@ -1,0 +1,172 @@
+/* body and text styles */
+body {
+  background-color: #333;
+  color: #fff;
+}
+
+/* header styles */
+header {
+  background-color: #222;
+  padding: 20px;
+}
+
+/* navigation styles */
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 20px;
+  font-size: 18px;
+}
+
+nav a:hover {
+  color: #aaa;
+}
+
+/* section styles */
+section {
+  background-color: #444;
+  padding: 30px;
+  margin: 20px 0;
+}
+
+section h1 {
+  margin-bottom: 20px;
+}
+
+/* work section styles */
+#work ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#work li {
+  margin-bottom: 30px;
+}
+
+#work h2 {
+  margin-bottom: 10px;
+}
+
+#work img {
+  max-width: 100%;
+}
+
+/* contact section styles */
+#contact form {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#contact label {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+#contact input[type="text"], #contact input[type="email"], #contact textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  background-color: #555;
+  color: #fff;
+  border: none;
+}
+
+#contact input[type="submit"] {
+  background-color: #111;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+/* logo container styles */
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo-container img {
+  width: 50px;
+  margin-right: 10px;
+}
+
+.logo-container h1 {
+  font-size: 20px;
+  margin: 0;
+}
+
+/* navigation links styles */
+.nav-links {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+/* GitHub button styles */
+.github-button {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.github-button:hover {
+  background-color: #444;
+}
+
+/* hidden navigation bar */
+#navbar.scrolled {
+  top: -100px;
+}
+
+/* social media section styles */
+#social-media a {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+#social-media img {
+  max-width: 100%;
+  text-align: center;
+}
+
+#social-media {
+  display: flex;
+  justify-content: center;
+  background-color: transparent;
+}
+
+#home-page {
+  text-align: center;
+}
+
+@keyframes background-animation {
+  from {
+      background-position: 0 0;
+  }
+  to {
+      background-position: 100% 0;
+  }
+}
+
+/* Apply animation to body or specific section */
+body, #home-page{
+  background-image: url("sourcefiles/gifexample.gif");
+  animation: background-animation 60s linear infinite;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* Remove animation from specific pages */
+.no-animation {
+  animation: none;
+}
